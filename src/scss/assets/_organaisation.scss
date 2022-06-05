@@ -1,0 +1,51 @@
+/* : Organaisation */
+
+/* ! <Organaisation>============================================================================================================================================= */
+.organaisation {
+    background-color: #f6f2f2;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 189px 0 123px 0;
+    }
+
+    &__content {
+        flex: 0 1 50%;
+        max-width: 590px;
+        & *:last-child {
+            margin: 0;
+        }
+    }
+
+    &__title {
+        font-size: 60px;
+        line-height: 72px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+
+        margin: 0 0 15px 0;
+        span {
+            letter-spacing: 0.1em;
+        }
+    }
+
+    &__text {
+        margin: 0 0 37px 0;
+    }
+
+    &__button {
+        width: 227px;
+        height: 55px;
+    }
+
+    &__video {
+        video {
+            width: 551px;
+            height: 356px;
+        }
+    }
+}
+/* ! </Organaisation>============================================================================================================================================ */
