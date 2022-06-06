@@ -47,12 +47,20 @@
 
         margin: 0 0 20px 0;
     }
+    
+    &__line {
+        width: 100%;
+        height: 2px;
+        background-color: #ececec;
+    }
 }
 
 .provide-columns {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
     grid-gap: 40px;
+
+    padding: 0 0 108px 0;
 
     @media only screen and (max-width:566px) {
         // grid-auto-flow: column;
@@ -61,6 +69,7 @@
 
     @media only screen and (max-width:$md1) {
         margin: 0 auto;
+        padding: 0 0 72px 0;
     }
 
     &__body {

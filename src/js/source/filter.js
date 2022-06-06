@@ -1,9 +1,9 @@
-export function filter(filterLinks, filterColumns) {
+function filter(filterLinks, filterColumns) {
     filterLinks.forEach(link => {
         link.addEventListener("click", function (e) {
             let dataFilterCount = link.getAttribute("data-filter");
             filterColumns.forEach(column => {
-                if (dataFilterCount == "3" && dataFilterCount == 3) {
+                if (dataFilterCount == "1" && dataFilterCount == 1) {
                     column.classList.add("active");
                 } else {
                     column.classList.remove("active");
@@ -30,7 +30,7 @@ export function filter(filterLinks, filterColumns) {
     }
 }
 
-// const filterListLinks = document.querySelectorAll(".filter__list-link");
-// const filterColumns = document.querySelectorAll(".filter-columns__column");
+const filterListLinks = document.querySelectorAll(".products__filter-item");
+const filterColumns = document.querySelectorAll(".products__img");
 
-// filter(filterListLinks, filterColumns);
+filter(filterListLinks, filterColumns);
