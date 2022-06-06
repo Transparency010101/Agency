@@ -21,7 +21,7 @@
 
     position: relative;
 
-    border: 2px solid $secondColor;
+    border: 3px solid $secondColor;
     border-radius: 5px;
     background-color: $secondColor;
 
@@ -36,6 +36,25 @@
         left: 50%;
         top: 0;
         background-color: #fff;
+    }
+
+    &.-active {
+        .red-button-text {
+            color: $secondColor;
+        }
+        &::after {
+            width: 100%;
+            left: 0;
+        }
+        &:hover {
+            .red-button-text {
+                color: #fff;
+            }
+            &::after {
+                left: 50%;
+                width: 0;
+            }
+        }
     }
 
     &:hover {
