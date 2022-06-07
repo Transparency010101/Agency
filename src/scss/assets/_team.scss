@@ -3,9 +3,16 @@
 /* ! <Team>=============================================================================================================================================*/
 .team {
     padding: 0 0 110px 0;
+    @media only screen and (max-width: $md1) {
+        padding: 0 0 50px 0;
+    }
     &__top {
         max-width: 450px;
         margin: 0 0 65px 0;
+        @media only screen and (max-width: $md1) {
+            text-align: center;
+            margin: 0 auto 45px auto;
+        }
     }
 
     &__title {
@@ -19,14 +26,32 @@
     &__content {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width: $md1) {
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
     }
 
     &__img {
+        @media only screen and (max-width:$md1) {
+            margin: 0 15px;
+        }
+    }
+
+    &__red-line {
+        @media only screen and (max-width: $md1) {
+            margin: 0 auto;
+        }
     }
 }
 
 .team-our-team {
     max-width: 860px;
+    @media only screen and (max-width: $md1) {
+        text-align: center;
+    }
     &__title {
         opacity: 0.8;
         font-size: 30px;
@@ -40,42 +65,65 @@
 
     &__text {
         margin: 0 0 37px 0;
+        max-width: 635px;
+        @media only screen and (max-width: $md1) {
+            margin: 0 auto 37px auto;
+        }
     }
 
     &__socials {
         margin: 0 0 60px 0;
-        a {
-            opacity: 0.8;
-            font-size: 18px;
-            line-height: 24px;
-            font-style: italic;
-            letter-spacing: 0.05em;
-
+        display: flex;
+        @media only screen and (max-width:$md1) {
+            justify-content: center;
+        }
+        li {
             margin: 0 25px 0 0;
-            &:hover {
-                opacity: 0.7;
+            a {
+                opacity: 0.8;
+                font-size: 18px;
+                line-height: 24px;
+                font-style: italic;
+                letter-spacing: 0.05em;
+
+                &:hover {
+                    opacity: 0.5;
+                    text-decoration: underline;
+                }
+                &:active {
+                    opacity: 0.3;
+                }
+                @media only screen and (max-width: $md3) {
+                    margin: 0 0 0 0;
+                }
             }
-            &:active {
-                opacity: 0.4;
+            &:last-child {
+                margin: 0;
             }
         }
     }
 
     &__team {
         display: flex;
+        flex-wrap: wrap;
+        @media only screen and (max-width: $md1) {
+            justify-content: center;
+        }
     }
 
     &__img {
-        flex: 0 1 25%;
-        margin: 0 20px 0 0;
+        margin: 8px;
+
+        @media only screen and (min-width:$md1) {
+            &:first-child {
+                margin: 8px 8px 8px 0;
+            }
+        }
 
         position: relative;
 
-        &:last-child {
-            margin: 0;
-        }
-
-        &:hover, &.-active {
+        &:hover,
+        &.-active {
             .team-our-team__name {
                 position: absolute;
                 bottom: 0;
