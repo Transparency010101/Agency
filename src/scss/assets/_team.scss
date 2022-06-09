@@ -1,11 +1,9 @@
 /* : Team */
+/* : Team-our-team */
+/* : Team-email */
 
 /* ! <Team>=============================================================================================================================================*/
 .team {
-    padding: 0 0 110px 0;
-    @media only screen and (max-width: $md1) {
-        padding: 0 0 50px 0;
-    }
     &__top {
         max-width: 450px;
         margin: 0 0 65px 0;
@@ -28,14 +26,18 @@
         justify-content: space-between;
         align-items: center;
 
+        padding: 0 0 110px 0;
+
         @media only screen and (max-width: $md1) {
             flex-direction: column-reverse;
             justify-content: center;
+
+            padding: 0 0 50px 0;
         }
     }
 
     &__img {
-        @media only screen and (max-width:$md1) {
+        @media only screen and (max-width: $md1) {
             margin: 0 15px;
         }
     }
@@ -46,7 +48,9 @@
         }
     }
 }
+/* ! </Team>============================================================================================================================================*/
 
+/* ! <Team-our-team>=============================================================================================================================================*/
 .team-our-team {
     max-width: 860px;
     @media only screen and (max-width: $md1) {
@@ -74,7 +78,7 @@
     &__socials {
         margin: 0 0 60px 0;
         display: flex;
-        @media only screen and (max-width:$md1) {
+        @media only screen and (max-width: $md1) {
             justify-content: center;
         }
         li {
@@ -114,7 +118,7 @@
     &__img {
         margin: 8px;
 
-        @media only screen and (min-width:$md1) {
+        @media only screen and (min-width: $md1) {
             &:first-child {
                 margin: 8px 8px 8px 0;
             }
@@ -153,4 +157,45 @@
         display: none;
     }
 }
-/* ! </Team>============================================================================================================================================*/
+/* ! </Team-our-team>============================================================================================================================================*/
+
+/* ! <Team-email>=============================================================================================================================================*/
+.team-email {
+    background-color: #f5f0dd;
+    padding: 110px 0 140px 0;
+    &__content {
+        color: #fff;
+        text-align: center;
+    }
+
+    &__title {
+        margin: 0 0 20px 0;
+        @include ItC("font-size", 25, 42);
+    }
+
+    &__text {
+        margin: 0 0 57px 0;
+    }
+
+    &__email {
+        input {
+            width: 521px;
+            height: 79px;
+            background-color: #fff;
+
+            padding: 0 0 0 33px;
+            margin: 0 20px 0 0;
+            @media only screen and (max-width:$md3) {
+                margin: 0 0 20px 0;
+                padding: 20px;
+            }
+        }
+    }
+
+    &__button {
+        width: 214px;
+        height: 79px;
+        text-transform: uppercase;
+    }
+}
+/* ! </Team-email>============================================================================================================================================*/

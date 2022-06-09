@@ -1,0 +1,33 @@
+/* ! <Footer>=============================================================================================================================================*/
+.footer {
+    &__body {
+        background-color: #313030;
+    }
+
+    &__copyright {
+        color: #b8b8b8;
+    }
+
+    &__socials {
+        display: flex;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 111px;
+    }
+
+    &__socuals-icon {
+        margin: 0 15px 0 0;
+        &:hover {
+            opacity: 0.5;
+        }
+        &:active {
+            opacity: 0.3;
+        }
+    }
+}
+
+/* ! </Footer>============================================================================================================================================*/
