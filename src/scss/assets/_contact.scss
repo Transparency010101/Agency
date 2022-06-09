@@ -11,8 +11,8 @@
     }
 
     &__top {
-        max-width: 1320px;
-        margin: 0 auto 75px auto;
+        max-width: 715px;
+        margin: 0 0 75px 0;
     }
 
     &__title {
@@ -36,10 +36,9 @@
 
 /* ! <contact-form>=============================================================================================================================================*/
 .contact-form {
-    width: 48%;
+    max-width: 731px;
     &__inputs {
         display: flex;
-        justify-content: space-between;
 
         margin: 0 0 46px 0;
         input {
@@ -50,6 +49,10 @@
             border-radius: 10px;
 
             padding: 0 0 0 54px;
+            margin: 0 54px 0 0;
+            &:last-child {
+                margin: 0;
+            }
         }
     }
 
@@ -69,17 +72,11 @@
         height: 72px;
         text-transform: uppercase;
     }
-
-    &__container {
-        max-width: $container + px;
-        margin: 0 auto;
-    }
 }
 /* ! </contact-form>============================================================================================================================================*/
 
 /* ! <contact-info>=============================================================================================================================================*/
 .contact-info {
-    width: 40%;
     background-color: #2d2d2d;
 
     &__body {
@@ -88,7 +85,7 @@
 
     &__content {
         color: #fff;
-        margin: 145px 0 129px 79px;
+        margin: 145px 0 0 79px;
 
         display: flex;
         flex-direction: column;
