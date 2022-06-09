@@ -7,11 +7,12 @@
     padding: 106px 0 110px 0;
     position: relative;
     &__body {
-        
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 
     &__top {
-        max-width: 715px;
         margin: 0 0 75px 0;
     }
 
@@ -27,16 +28,29 @@
     &__red-line {
     }
 
+    &__right {
+    }
+
+    &__left {
+        padding: 105px 211px 146px 79px;
+        background-color: #2d2d2d;
+    }
+
     &__content {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    &__container {
+        max-width: 732px;
+        margin: 0 auto;
     }
 }
 /* ! </contact>============================================================================================================================================*/
 
 /* ! <contact-form>=============================================================================================================================================*/
 .contact-form {
-    max-width: 731px;
     &__inputs {
         display: flex;
 
@@ -71,22 +85,18 @@
         width: 100%;
         height: 72px;
         text-transform: uppercase;
+        max-width: 731px;
     }
 }
 /* ! </contact-form>============================================================================================================================================*/
 
 /* ! <contact-info>=============================================================================================================================================*/
 .contact-info {
-    background-color: #2d2d2d;
-
     &__body {
-        max-width: 400px;
     }
 
     &__content {
         color: #fff;
-        margin: 145px 0 0 79px;
-
         display: flex;
         flex-direction: column;
         a {
@@ -107,6 +117,7 @@
 
     &__address {
         margin: 0 0 23px 0;
+        max-width: 300px;
     }
 
     &__email {
