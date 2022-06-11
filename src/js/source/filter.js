@@ -1,7 +1,7 @@
 function filter(filterLinks, filterColumns) {
     filterLinks.forEach(link => {
         link.addEventListener("click", function (e) {
-            let dataFilterCount = link.getAttribute("data-filter");
+            const dataFilterCount = link.getAttribute("data-filter");
             filterColumns.forEach(column => {
                 if (dataFilterCount == "1" && dataFilterCount == 1) {
                     column.classList.add("active");

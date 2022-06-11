@@ -80,9 +80,14 @@
         display: flex;
         @media only screen and (max-width: $md1) {
             justify-content: center;
+            flex-wrap: wrap;
         }
         li {
             margin: 0 25px 0 0;
+            @media only screen and (max-width:375px) {
+                margin: 10px 25px 10px 0;
+                align-self: center;
+            }
             a {
                 opacity: 0.8;
                 font-size: 18px;
@@ -127,7 +132,7 @@
         position: relative;
 
         &:hover,
-        &.-active {
+        &.active {
             .team-our-team__name {
                 position: absolute;
                 bottom: 0;
